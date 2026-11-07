@@ -1,0 +1,736 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ISI GARMENTS | Premium Textile Manufacturer</title>
+
+<meta name="description" content="ISI GARMENTS manufactures premium braided drawcords and knitted rib trims for hoodies, joggers, jackets and apparel brands. Bulk supply from Pakistan.">
+
+<meta name="theme-color" content="#111a17">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --dark:#111a17;
+  --green:#c4f36b;
+  --cream:#f5f5ef;
+  --muted:#a4aaa4;
+  --white:#ffffff;
+}
+
+* {margin:0;padding:0;box-sizing:border-box}
+html {scroll-behavior:smooth}
+body {
+  font-family:'DM Sans',sans-serif;
+  background:var(--cream);
+  color:var(--dark);
+  overflow-x:hidden;
+}
+a {text-decoration:none;color:inherit}
+button {font:inherit}
+.container {width:min(1180px,90%);margin:auto}
+
+/* NAVIGATION */
+header {
+  background:var(--dark);
+  color:white;
+  position:sticky;
+  top:0;
+  z-index:100;
+  border-bottom:1px solid #ffffff17;
+}
+.nav {
+  height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo {
+  font-family:Manrope,sans-serif;
+  font-size:25px;
+  font-weight:800;
+  letter-spacing:2px;
+}
+.logo span {color:var(--green)}
+.logo small {
+  display:block;
+  font-size:9px;
+  letter-spacing:4px;
+  color:#aaa;
+  font-weight:500;
+}
+.navlinks {
+  display:flex;
+  gap:34px;
+  align-items:center;
+  font-size:13px;
+  color:#ddd;
+}
+.navlinks a:hover {color:var(--green)}
+.nav-cta {
+  background:var(--green);
+  color:var(--dark);
+  padding:13px 20px;
+  border-radius:3px;
+  font-weight:700;
+  font-size:12px;
+}
+.menu-btn {
+  display:none;
+  border:0;
+  color:white;
+  background:none;
+  font-size:27px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero {
+  background:var(--dark);
+  color:white;
+  padding:90px 0 100px;
+  position:relative;
+  overflow:hidden;
+}
+.hero:before {
+  content:"";
+  position:absolute;
+  width:550px;height:550px;
+  border:1px solid #ffffff12;
+  border-radius:50%;
+  right:-150px;top:-100px;
+}
+.hero-grid {
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  align-items:center;
+  gap:55px;
+}
+.eyebrow {
+  color:var(--green);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:24px;
+}
+.hero h1 {
+  font-family:Manrope,sans-serif;
+  font-size:clamp(42px,6vw,76px);
+  line-height:1.08;
+  letter-spacing:-3px;
+  margin-bottom:25px;
+}
+.hero h1 span {color:var(--green)}
+.hero-desc {
+  max-width:480px;
+  color:#b5bcb6;
+  line-height:1.8;
+  font-size:15px;
+  margin-bottom:35px;
+}
+.hero-buttons {display:flex;gap:13px;flex-wrap:wrap}
+.btn {
+  padding:16px 24px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  font-size:13px;
+  border-radius:3px;
+  transition:.25s;
+}
+.btn-green {background:var(--green);color:var(--dark)}
+.btn-green:hover {background:white;transform:translateY(-3px)}
+.btn-outline {border:1px solid #ffffff50;color:white}
+.btn-outline:hover {border-color:var(--green);color:var(--green)}
+.hero-image {
+  position:relative;
+  height:460px;
+}
+.hero-image img {
+  width:100%;height:100%;
+  object-fit:cover;
+  border-radius:5px;
+  filter:brightness(.82);
+}
+.image-tag {
+  position:absolute;
+  bottom:22px;left:-22px;
+  background:var(--green);
+  color:var(--dark);
+  padding:18px 22px;
+  font-size:12px;
+  font-weight:800;
+}
+
+/* STATS */
+.stats {
+  background:var(--green);
+  padding:30px 0;
+}
+.stats-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  text-align:center;
+}
+.stat {
+  border-right:1px solid #111a1730;
+}
+.stat:last-child {border:0}
+.stat strong {font-size:25px;display:block}
+.stat span {font-size:11px;letter-spacing:1px;font-weight:700}
+
+/* SECTION */
+section {padding:100px 0}
+.section-top {
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:25px;
+  margin-bottom:45px;
+}
+.section-label {
+  color:#718052;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:3px;
+  margin-bottom:14px;
+}
+.section-title {
+  font-family:Manrope,sans-serif;
+  font-size:clamp(30px,4vw,48px);
+  letter-spacing:-1.8px;
+  line-height:1.15;
+}
+.section-desc {
+  color:#777f78;
+  max-width:390px;
+  line-height:1.8;
+  font-size:14px;
+}
+
+/* PRODUCTS */
+.products {background:white}
+.product-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+.product-card {
+  background:var(--cream);
+  overflow:hidden;
+  border-radius:5px;
+}
+.product-img {height:320px;overflow:hidden}
+.product-img img {
+  width:100%;height:100%;
+  object-fit:cover;
+  transition:transform .5s;
+}
+.product-card:hover img {transform:scale(1.06)}
+.product-content {padding:30px}
+.product-number {
+  font-size:11px;
+  color:#849071;
+  font-weight:800;
+  letter-spacing:2px;
+}
+.product-content h3 {
+  font-family:Manrope,sans-serif;
+  font-size:25px;
+  margin:12px 0;
+}
+.product-content p {
+  color:#737a74;
+  font-size:14px;
+  line-height:1.8;
+}
+.product-link {
+  display:inline-block;
+  margin-top:22px;
+  font-size:12px;
+  font-weight:800;
+  border-bottom:1px solid var(--dark);
+  padding-bottom:5px;
+}
+
+/* ABOUT */
+.about {background:var(--cream)}
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:75px;
+  align-items:center;
+}
+.about-image {
+  height:460px;
+  position:relative;
+}
+.about-image img {
+  width:100%;height:100%;
+  object-fit:cover;
+  border-radius:4px;
+}
+.about-content p {
+  color:#737a74;
+  line-height:1.9;
+  font-size:14px;
+  margin:23px 0;
+}
+.feature {
+  display:flex;
+  gap:15px;
+  margin-top:20px;
+  align-items:flex-start;
+}
+.feature-icon {
+  background:var(--green);
+  width:35px;height:35px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  flex-shrink:0;
+}
+.feature strong {font-size:14px}
+.feature small {
+  display:block;
+  color:#828981;
+  margin-top:5px;
+}
+
+/* APPLICATIONS */
+.applications {
+  background:var(--dark);
+  color:white;
+}
+.applications .section-title {color:white}
+.applications .section-desc {color:#aab2aa}
+.app-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+.app-card {
+  min-height:220px;
+  padding:25px;
+  border:1px solid #ffffff25;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition:.3s;
+}
+.app-card:hover {
+  background:#25332a;
+  border-color:var(--green);
+  transform:translateY(-5px);
+}
+.app-card span {font-size:30px}
+.app-card h3 {font-size:17px}
+.app-card p {font-size:12px;color:#aab2aa;margin-top:9px;line-height:1.6}
+
+/* CTA */
+.cta {
+  background:var(--green);
+  text-align:center;
+  padding:85px 0;
+}
+.cta h2 {
+  font-family:Manrope,sans-serif;
+  font-size:clamp(32px,5vw,55px);
+  letter-spacing:-2px;
+}
+.cta p {margin:18px 0 30px;color:#34412b}
+.cta .btn {background:var(--dark);color:white}
+
+/* FOOTER */
+footer {
+  background:var(--dark);
+  color:white;
+  padding:65px 0 25px;
+}
+.footer-grid {
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  gap:50px;
+  padding-bottom:45px;
+}
+.footer-about p {
+  color:#aab2aa;
+  line-height:1.8;
+  font-size:13px;
+  margin-top:18px;
+  max-width:350px;
+}
+footer h4 {margin-bottom:20px;font-size:14px}
+footer ul {list-style:none}
+footer li {
+  color:#aab2aa;
+  font-size:13px;
+  margin-bottom:13px;
+}
+footer a:hover {color:var(--green)}
+.copyright {
+  border-top:1px solid #ffffff20;
+  padding-top:22px;
+  display:flex;
+  justify-content:space-between;
+  color:#89928a;
+  font-size:11px;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp {
+  position:fixed;
+  right:22px;bottom:22px;
+  z-index:200;
+  background:#25D366;
+  color:white;
+  width:58px;height:58px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  font-size:25px;
+  box-shadow:0 5px 25px #0003;
+}
+
+/* RESPONSIVE */
+@media(max-width:800px) {
+  .nav {height:70px}
+  .menu-btn {display:block}
+  .navlinks {
+    display:none;
+    position:absolute;
+    top:70px;left:0;
+    width:100%;
+    background:var(--dark);
+    padding:25px 5%;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:22px;
+  }
+  .navlinks.open {display:flex}
+  .hero {padding:65px 0}
+  .hero-grid,.about-grid {grid-template-columns:1fr}
+  .hero-image {height:340px;margin-top:10px}
+  .image-tag {left:0}
+  section {padding:70px 0}
+  .section-top {display:block}
+  .section-desc {margin-top:18px}
+  .app-grid {grid-template-columns:1fr 1fr}
+  .footer-grid {grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px) {
+  .hero h1 {letter-spacing:-2px}
+  .product-grid {grid-template-columns:1fr}
+  .product-img {height:250px}
+  .stats-grid {gap:10px}
+  .stat strong {font-size:20px}
+  .stat span {font-size:9px}
+  .app-grid {grid-template-columns:1fr 1fr}
+  .app-card {min-height:180px;padding:16px}
+  .footer-grid {grid-template-columns:1fr;gap:30px}
+  .copyright {flex-direction:column;gap:10px}
+  .about-image {height:320px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo">ISI<span>.</span>
+      <small>GARMENTS</small>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+
+    <nav class="navlinks" id="navlinks">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About Us</a>
+      <a href="#applications">Applications</a>
+      <a href="#contact" class="nav-cta">GET A QUOTE ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">TEXTILE ACCESSORIES MANUFACTURER</div>
+      <h1>Details That<br>Define <span>Quality.</span></h1>
+      <p class="hero-desc">
+        Premium braided drawcords and knitted rib trims
+        engineered for modern apparel manufacturing.
+        Reliable bulk supply. Consistent quality.
+      </p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn btn-green">EXPLORE PRODUCTS ↗</a>
+        <a href="#contact" class="btn btn-outline">CONTACT US</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1100&q=85"
+           alt="Textile manufacturing and materials">
+      <div class="image-tag">MADE FOR APPAREL INDUSTRY</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="container stats-grid">
+    <div class="stat">
+      <strong>01</strong>
+      <span>QUALITY FOCUSED</span>
+    </div>
+    <div class="stat">
+      <strong>02</strong>
+      <span>CORE PRODUCT LINES</span>
+    </div>
+    <div class="stat">
+      <strong>B2B</strong>
+      <span>BULK SUPPLY</span>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-top">
+      <div>
+        <div class="section-label">WHAT WE MANUFACTURE</div>
+        <h2 class="section-title">Our Core Products.</h2>
+      </div>
+      <p class="section-desc">
+        Textile accessories designed to complement
+        performance, comfort and the finishing of apparel.
+      </p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=900&q=85"
+               alt="Braided cords">
+        </div>
+        <div class="product-content">
+          <div class="product-number">PRODUCT 01</div>
+          <h3>Braided Drawcords</h3>
+          <p>
+            Durable braided cords for hoodies, joggers,
+            jackets and trousers. Multiple colours,
+            thicknesses and finishing options.
+          </p>
+          <a href="https://wa.me/923215856481?text=Hello%20ISI%20GARMENTS,%20I%20am%20interested%20in%20Braided%20Drawcords."
+             class="product-link">REQUEST PRODUCT DETAILS ↗</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=900&q=85"
+               alt="Knitted textile fabric">
+        </div>
+        <div class="product-content">
+          <div class="product-number">PRODUCT 02</div>
+          <h3>Knitted Rib Trims</h3>
+          <p>
+            Knitted rib trims for cuffs, collars and waistbands.
+            Custom colours, textures and specifications
+            for apparel production.
+          </p>
+          <a href="https://wa.me/923215856481?text=Hello%20ISI%20GARMENTS,%20I%20am%20interested%20in%20Knitted%20Rib%20Trims."
+             class="product-link">REQUEST PRODUCT DETAILS ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1000&q=85"
+           alt="Textile production">
+    </div>
+
+    <div class="about-content">
+      <div class="section-label">ABOUT ISI GARMENTS</div>
+      <h2 class="section-title">Manufacturing With Purpose.</h2>
+      <p>
+        ISI GARMENTS focuses on manufacturing textile
+        accessories that bring value to apparel brands
+        and garment manufacturers.
+      </p>
+      <p>
+        Our product range includes braided drawcords
+        and knitted rib trims, with a focus on dependable
+        bulk supply and customer requirements.
+      </p>
+
+      <div class="feature">
+        <div class="feature-icon">✓</div>
+        <div>
+          <strong>Custom Specifications</strong>
+          <small>Colours, sizes and product requirements.</small>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">✓</div>
+        <div>
+          <strong>Bulk Manufacturing</strong>
+          <small>Supply for garment production businesses.</small>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">✓</div>
+        <div>
+          <strong>Product Focus</strong>
+          <small>Drawcords and knitted rib accessories.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="applications" id="applications">
+  <div class="container">
+    <div class="section-top">
+      <div>
+        <div class="section-label">OUR APPLICATIONS</div>
+        <h2 class="section-title">Made For Modern Apparel.</h2>
+      </div>
+      <p class="section-desc">
+        Our accessories are suitable for a wide range
+        of casualwear and fashion apparel.
+      </p>
+    </div>
+
+    <div class="app-grid">
+      <div class="app-card">
+        <span>01</span>
+        <div>
+          <h3>Hoodies</h3>
+          <p>Drawcords, cuffs and waistband trims.</p>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <span>02</span>
+        <div>
+          <h3>Joggers</h3>
+          <p>Functional drawcords and knitted ribs.</p>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <span>03</span>
+        <div>
+          <h3>Jackets</h3>
+          <p>Finishing accessories for outerwear.</p>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <span>04</span>
+        <div>
+          <h3>Trousers</h3>
+          <p>Drawcord and waistband applications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="cta" id="contact">
+  <div class="container">
+    <div class="section-label">LET'S WORK TOGETHER</div>
+    <h2>Have a Bulk Requirement?</h2>
+    <p>Share your product specifications and request a quotation.</p>
+    <a class="btn" href="https://wa.me/923215856481?text=Hello%20ISI%20GARMENTS,%20I%20would%20like%20a%20bulk%20quotation.">
+      DISCUSS YOUR REQUIREMENT ↗
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="#" class="logo">ISI<span>.</span>
+          <small>GARMENTS</small>
+        </a>
+        <p>
+          Braided drawcords & knitted rib trims.
+          Textile accessories for modern apparel
+          manufacturing. Bulk supply.
+        </p>
+      </div>
+
+      <div>
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Our Products</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#applications">Applications</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>GET IN TOUCH</h4>
+        <ul>
+          <li><a href="https://wa.me/923215856481">+92 321 5856481</a></li>
+          <li><a href="mailto:isigarments@gmail.com">isigarments@gmail.com</a></li>
+          <li>Pakistan</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <span>© 2026 ISI GARMENTS. All rights reserved.</span>
+      <span>TEXTILE ACCESSORIES MANUFACTURER</span>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/923215856481?text=Hello%20ISI%20GARMENTS"
+   aria-label="Chat on WhatsApp">✆</a>
+
+<script>
+function toggleMenu() {
+  document.getElementById('navlinks').classList.toggle('open');
+}
+
+document.querySelectorAll('.navlinks a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('navlinks').classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>
